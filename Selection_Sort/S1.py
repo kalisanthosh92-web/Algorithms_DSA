@@ -1,8 +1,8 @@
 #Write a program to sort a list in ascending order.
 
-#st = list(input('Enter a list:'))
+lst = eval(input('Enter a list:'))
 
-def smallest(lst):
+def smallestnum(lst):
     smallest = lst[0]
     s_index = 0
     for i in range(1,len(lst)):
@@ -14,11 +14,11 @@ def smallest(lst):
 def Selectionsort(lst):
     newarr = []
     for i in range(len(lst)):
-        smallest = smallest(lst)
-        newarr = newarr.append(lst.pop(smallest))
+        smallest = smallestnum(lst)
+        newarr.append(lst.pop(smallest))
     return newarr
 
-print(Selectionsort([29,10,14,377,13]))
+print(Selectionsort(lst))
 
 
 
