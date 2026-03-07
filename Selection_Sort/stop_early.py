@@ -2,7 +2,7 @@
 #Modify selection sort to stop early if the list becomes sorted.
 
 
-arr = [1, 2, 3, 4, 5]
+arr = [1, 2, 3, 7, 4, 5]
 
 for i in range(len(arr)):
     min_i = i
@@ -16,3 +16,4 @@ for i in range(len(arr)):
     arr[i], arr[min_i] = arr[min_i], arr[i]
 
 print(arr)
+
