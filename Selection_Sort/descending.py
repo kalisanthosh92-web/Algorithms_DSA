@@ -12,3 +12,4 @@ for i in range(len(a)-1):
     a[i],a[min_i] = a[min_i],a[i]
 
 print(a)
+
