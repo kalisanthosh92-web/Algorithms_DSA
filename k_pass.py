@@ -11,6 +11,9 @@ k = 2
 swaps = 0
 
 for i in range(len(n)):
+    if k == 0 :
+        break
+
     min_i = i
     for j in range(i+1,len(n)):
         if n[j] < n[min_i]:
@@ -19,9 +22,7 @@ for i in range(len(n)):
     if min_i != i:
         n[i],n[min_i] = n[min_i],n[i]
         swaps += 1
-    if swaps == k :
-        print(n)
-        break 
+        k-=1
 
 
-print(swaps)
+print(n)
