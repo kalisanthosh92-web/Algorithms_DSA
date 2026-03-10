@@ -22,3 +22,5 @@ for i in range(len(n)):
     max_move = max(max_move,abs(i-old_index))
 
 print(max_move)
+
+#max() function
