@@ -1,6 +1,6 @@
 #Modify selection sort to count how many swaps are performed.
 
-a = [5, 3, 8, 4, 2]
+a = [10,9,8,7,6]
 swaps = 0
 for i in range(len(a)-1):
     min_i = i
